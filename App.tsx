@@ -95,7 +95,6 @@ const App: React.FC = () => {
             { id: TabType.AI_GENERATOR, label: 'Arquiteto IA', icon: 'fa-wand-magic-sparkles' },
             { id: TabType.LIBRARY, label: 'Biblioteca Técnica', icon: 'fa-dna' },
             { id: TabType.PROFILE, label: 'Bio & Metas', icon: 'fa-id-card' },
-            { id: TabType.LAUNCH_CENTER, label: 'Publicar App', icon: 'fa-rocket' },
           ].map(tab => (
             <button
               key={tab.id}
@@ -130,13 +129,6 @@ const App: React.FC = () => {
             onSaveRoutine={handleSaveRoutine} 
             setActiveTab={setActiveTab}
           />
-        )}
-        {activeTab === TabType.LAUNCH_CENTER && (
-          <div className="text-center py-20 space-y-6">
-            <i className="fa-solid fa-rocket text-6xl text-violet-600 mb-4"></i>
-            <h2 className="text-4xl font-black text-white">Central de Lançamento</h2>
-            <p className="text-zinc-500 max-w-lg mx-auto">Em breve: Transforme seu FitPlanner em um aplicativo nativo para Android e iOS.</p>
-          </div>
         )}
       </main>
 
