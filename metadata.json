@@ -1,0 +1,5 @@
+{
+  "name": "FitPlanner Pro",
+  "description": "Um aplicativo completo para montagem de rotinas de musculação, com biblioteca de exercícios, editor de perfil e persistência de dados por usuário.",
+  "requestFramePermissions": []
+}
